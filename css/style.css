@@ -1,1 +1,77 @@
-/* No CSS */
+/* Color */
+@import url("https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Public Sans", sans-serif;
+  font-size: 1.4rem;
+  line-height: 1.7;
+}
+
+a {
+  text-decoration: none;
+  color: #f3f4f6;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  border: solid;
+}
+
+h4 {
+  margin: 2rem;
+  font-size: 2rem;
+}
+
+.bank {
+  background-color: #f3f4f6;
+  text-align: center;
+}
+
+.bank p {
+  color: #9698a6;
+}
+
+.article__wrapper {
+  background-color: white;
+  border: solid;
+}
+
+.article__image {
+  width: 100%;
+}
+
+.footer {
+  background-color: #2d314d;
+  color: #f3f4f6;
+  text-align: center;
+}
+
+.btn-link {
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(#31d35c),
+    to(#2bb7da)
+  );
+  background-image: linear-gradient(to right, #31d35c, #2bb7da);
+  padding: 1.5rem 4rem;
+  display: inline-block;
+  font-weight: 700;
+  border-radius: 3.5rem;
+  margin: 5rem 0;
+}
