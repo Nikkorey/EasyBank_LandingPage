@@ -45,13 +45,47 @@ h4 {
   color: #9698a6;
 }
 
+.latest {
+  background-color: #f3f4f6;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .article {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
 .article__wrapper {
   background-color: white;
-  border: solid;
+  margin-top: 4rem;
 }
 
 .article__image {
   width: 100%;
+}
+
+.article__info {
+  padding: 3rem;
+  text-align: left;
+  color: #9698a6;
+}
+
+.article__author {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
+
+.article__title {
+  font-size: 2rem;
+  line-height: 1.2;
+  color: black;
+}
+
+.article__desc {
+  margin-top: 1rem;
 }
 
 .footer {
@@ -60,14 +94,27 @@ h4 {
   text-align: center;
 }
 
+.footer__logo {
+  display: inline-block;
+  margin-top: 2rem;
+}
+
+.footer__social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 4rem 0;
+}
+
+.footer__social-item {
+  margin-left: 1rem;
+}
+
 .btn-link {
-  background-image: -webkit-gradient(
-    linear,
-    left top,
-    right top,
-    from(#31d35c),
-    to(#2bb7da)
-  );
+  background-image: -webkit-gradient(linear, left top, right top, from(#31d35c), to(#2bb7da));
   background-image: linear-gradient(to right, #31d35c, #2bb7da);
   padding: 1.5rem 4rem;
   display: inline-block;

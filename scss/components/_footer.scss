@@ -2,4 +2,19 @@
   background-color: $primary-dark-blue;
   color: $Light-Grayish-Blue;
   text-align: center;
+
+  &__logo {
+    display: inline-block;
+    margin-top: 2rem;
+  }
+
+  &__social {
+    display: flex;
+    justify-content: center;
+    margin: 4rem 0;
+
+    &-item {
+      margin-left: 1rem;
+    }
+  }
 }

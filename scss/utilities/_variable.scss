@@ -7,3 +7,8 @@ $Grayish-Blue: hsl(233, 8%, 62%);
 $Light-Grayish-Blue: hsl(220, 16%, 96%);
 $Very-Light-Gray: hsl(0, 42%, 25%);
 $White: hsl(0, 0%, 100%);
+
+// Media query breakpoints
+
+$brk-point-768: "(min-width: 768px)";
+$brk-point-1024: "(min-width: 1024px)";
