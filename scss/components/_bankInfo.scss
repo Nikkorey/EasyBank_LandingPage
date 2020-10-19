@@ -3,5 +3,49 @@
   text-align: center;
   p {
     color: $Grayish-Blue;
+    font-size: 1.8rem;
   }
+
+  @media #{$brk-point-1024} {
+    text-align: left;
+  }
+}
+
+.bank__container {
+  display: grid;
+  grid-template-rows: repeat(1, 1fr);
+  grid-gap: 3rem;
+  margin-top: 6rem;
+
+  @media #{$brk-point-768} {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+  @media #{$brk-point-1024} {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-gap: 4rem;
+  }
+}
+
+.bank__intro-details {
+  margin-top: 2rem;
+
+  @media #{$brk-point-1024} {
+    width: 700px;
+  }
+}
+
+.bank__article {
+  @media #{$brk-point-768} {
+    text-align: left;
+  }
+
+  h4 {
+    margin: 2rem 0;
+  }
+}
+
+.bank__hero {
+  padding: 5rem 0;
 }
