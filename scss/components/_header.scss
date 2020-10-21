@@ -1,5 +1,8 @@
 .header {
   text-align: center;
+  @media #{$brk-point-1024} {
+    display: flex;
+  }
 
   &__image {
     background-image: url(/images/bg-intro-desktop.svg);
