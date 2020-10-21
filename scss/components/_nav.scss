@@ -1,0 +1,11 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 2;
+}
+.nav__list,
+.nav__item-requestLink,
+.nav__menu-close {
+  display: none;
+}

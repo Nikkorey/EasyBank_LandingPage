@@ -1,0 +1,20 @@
+.header {
+  text-align: center;
+
+  &__image {
+    background-image: url(/images/bg-intro-desktop.svg);
+    background-position: 25% 50%;
+    background-repeat: no-repeat;
+  }
+  &__image-photo {
+    width: 100%;
+    border: solid;
+  }
+
+  &__intro {
+    p {
+      color: $Grayish-Blue;
+      margin-top: 2rem;
+    }
+  }
+}
