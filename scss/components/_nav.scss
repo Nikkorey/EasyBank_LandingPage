@@ -3,9 +3,60 @@
   justify-content: space-between;
   align-items: center;
   z-index: 2;
+  position: relative;
+  margin: 1.5rem 0;
 }
 .nav__list,
 .nav__item-requestLink,
 .nav__menu-close {
   display: none;
+}
+
+.nav__list {
+  display: block;
+  position: absolute;
+  background-color: white;
+  top: 7rem;
+  width: 100%;
+  text-align: center;
+  padding: 2.5rem 0;
+  border-radius: 0.5rem;
+  visibility: hidden;
+
+  @media #{$brk-point-1024} {
+    visibility: initial;
+    position: initial;
+    top: initial;
+    width: initial;
+    text-align: initial;
+    display: flex;
+    align-items: center;
+    padding: initial;
+  }
+
+  &-item {
+    &:not(:first-child) {
+      margin-top: 1.5rem;
+
+      @media #{$brk-point-1024} {
+        margin-top: initial;
+        margin-left: 2rem;
+      }
+    }
+    &-link {
+      color: black;
+    }
+  }
+}
+
+.nav__menu {
+  @media #{$brk-point-1024} {
+    visibility: hidden;
+  }
+}
+
+.nav__item-requestLink {
+  @media #{$brk-point-1024} {
+    display: block;
+  }
 }

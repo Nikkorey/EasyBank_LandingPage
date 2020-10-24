@@ -27,7 +27,7 @@ ul {
 .container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 0 3rem;
 }
 
 h2 {
@@ -58,12 +58,70 @@ h4 {
       -ms-flex-align: center;
           align-items: center;
   z-index: 2;
+  position: relative;
+  margin: 1.5rem 0;
 }
 
 .nav__list,
 .nav__item-requestLink,
 .nav__menu-close {
   display: none;
+}
+
+.nav__list {
+  display: block;
+  position: absolute;
+  background-color: white;
+  top: 7rem;
+  width: 100%;
+  text-align: center;
+  padding: 2.5rem 0;
+  border-radius: 0.5rem;
+  visibility: hidden;
+}
+
+@media (min-width: 1024px) {
+  .nav__list {
+    visibility: initial;
+    position: initial;
+    top: initial;
+    width: initial;
+    text-align: initial;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: initial;
+  }
+}
+
+.nav__list-item:not(:first-child) {
+  margin-top: 1.5rem;
+}
+
+@media (min-width: 1024px) {
+  .nav__list-item:not(:first-child) {
+    margin-top: initial;
+    margin-left: 2rem;
+  }
+}
+
+.nav__list-item-link {
+  color: black;
+}
+
+@media (min-width: 1024px) {
+  .nav__menu {
+    visibility: hidden;
+  }
+}
+
+@media (min-width: 1024px) {
+  .nav__item-requestLink {
+    display: block;
+  }
 }
 
 .header {
@@ -392,7 +450,7 @@ h4 {
 .btn-link {
   background-image: -webkit-gradient(linear, left top, right top, from(#31d35c), to(#2bb7da));
   background-image: linear-gradient(to right, #31d35c, #2bb7da);
-  padding: 1.5rem 4rem;
+  padding: 1rem 3rem;
   display: inline-block;
   font-weight: 700;
   border-radius: 3.5rem;
