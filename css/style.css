@@ -17,7 +17,6 @@ body {
 
 a {
   text-decoration: none;
-  color: #f3f4f6;
 }
 
 ul {
@@ -60,6 +59,7 @@ h4 {
   z-index: 2;
   position: relative;
   margin: 1.5rem 0;
+  border: solid;
 }
 
 .nav__list,
@@ -77,7 +77,6 @@ h4 {
   text-align: center;
   padding: 2.5rem 0;
   border-radius: 0.5rem;
-  visibility: hidden;
 }
 
 @media (min-width: 1024px) {
@@ -93,7 +92,7 @@ h4 {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    padding: initial;
+    padding: 0;
   }
 }
 
@@ -103,7 +102,7 @@ h4 {
 
 @media (min-width: 1024px) {
   .nav__list-item:not(:first-child) {
-    margin-top: initial;
+    margin-top: 0;
     margin-left: 2rem;
   }
 }
@@ -112,9 +111,14 @@ h4 {
   color: black;
 }
 
+.nav__list-item-link:hover {
+  border-bottom: solid;
+  color: #696969;
+}
+
 @media (min-width: 1024px) {
   .nav__menu {
-    visibility: hidden;
+    display: none;
   }
 }
 
@@ -303,7 +307,8 @@ h4 {
 
 @media (min-width: 768px) {
   .footer {
-    height: 200px;
+    height: 150px;
+    padding: 2rem 0;
   }
 }
 
@@ -338,6 +343,10 @@ h4 {
   .footer__logo {
     -ms-grid-column-align: start;
         justify-self: start;
+    margin-top: initial;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
   }
 }
 
@@ -358,6 +367,7 @@ h4 {
     grid-row: 2 / 3;
     -ms-grid-column-align: start;
         justify-self: start;
+    margin: initial;
   }
 }
 
@@ -378,6 +388,7 @@ h4 {
         align-self: center;
     -ms-grid-column-align: end;
         justify-self: end;
+    display: inline-block;
   }
 }
 
@@ -409,6 +420,10 @@ h4 {
     -ms-grid-column-align: end;
         justify-self: end;
   }
+}
+
+.footerNav {
+  border: solid;
 }
 
 @media (min-width: 768px) {
@@ -434,12 +449,16 @@ h4 {
 @media (min-width: 1024px) {
   .footerNav__item:not(:first-of-type) {
     margin-top: 1rem;
+    color: beige;
   }
 }
 
 .footerNav__group-one {
   -ms-grid-column-align: start;
       justify-self: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .footerNav__group-two {
@@ -450,9 +469,12 @@ h4 {
 .btn-link {
   background-image: -webkit-gradient(linear, left top, right top, from(#31d35c), to(#2bb7da));
   background-image: linear-gradient(to right, #31d35c, #2bb7da);
-  padding: 1rem 3rem;
-  display: inline-block;
+  padding: 1rem 3.5rem;
   font-weight: 700;
   border-radius: 3.5rem;
-  margin: 5rem 0;
+  color: white;
+}
+
+.btn-link:hover {
+  color: yellow;
 }

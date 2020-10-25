@@ -5,7 +5,8 @@
   margin-top: auto;
 
   @media #{$brk-point-768} {
-    height: 200px;
+    height: 150px;
+    padding: 2rem 0;
   }
 
   &__hero {
@@ -28,6 +29,8 @@
 
     @media #{$brk-point-768} {
       justify-self: start;
+      margin-top: initial;
+      align-self: center;
     }
   }
 
@@ -39,6 +42,7 @@
     @media #{$brk-point-768} {
       grid-row: 2 / 3;
       justify-self: start;
+      margin: initial;
     }
 
     &-item {
@@ -51,6 +55,7 @@
       grid-column: 3 / 4;
       align-self: center;
       justify-self: end;
+      display: inline-block;
 
       @media #{$brk-point-1024} {
         justify-self: end;
@@ -73,6 +78,7 @@
 }
 
 .footerNav {
+  border: solid;
   @media #{$brk-point-768} {
     grid-row: 1 / 3;
   }
@@ -86,11 +92,13 @@
   &__item:not(:first-of-type) {
     @media #{$brk-point-1024} {
       margin-top: 1rem;
+      color: beige;
     }
   }
 
   &__group-one {
     justify-self: start;
+    align-items: center;
   }
 
   &__group-two {
